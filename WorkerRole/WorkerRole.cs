@@ -40,7 +40,7 @@ namespace WorkerRole
             repo.Initialize();
             
             if (repo.Get().Count() == 0)
-                repo.Add(new Order { Ids = 1, Customer = "Page", Product="A gun to shoot NuGet!", PartitionKey = "blah", RowKey = Guid.NewGuid().ToString() });
+                repo.Add(new Order { Ids = 1, Customer = "Page", Product="A gun to shoot NuGet", PartitionKey = "blah", RowKey = Guid.NewGuid().ToString() });
             
             return base.OnStart();
         }
