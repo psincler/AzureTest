@@ -3,14 +3,14 @@
   <Role name="WorkerRole">
     <Instances count="1" />
     <ConfigurationSettings>
-      <!--<Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=wpstestacctprod;AccountKey=mAQeY263PzjPoidH1bVAyPFzVuALSONMWJexM3QED23qp60NPG7KkEIxGRXXmiZcmi2di8TBupZXL5n39lOHsQ==" />-->
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=wpstestacctprod;AccountKey=qaw9vSqSKHM1szaxZPyAzGGjAfzFeNNopRS7uHviWgZjw59WOPChBl6rAYK+Z9Qi379t3I+KwBdn0knmdICrSg==" />
       <Setting name="Storage" value="DefaultEndpointsProtocol=https;AccountName=wpstestacctprod;AccountKey=qaw9vSqSKHM1szaxZPyAzGGjAfzFeNNopRS7uHviWgZjw59WOPChBl6rAYK+Z9Qi379t3I+KwBdn0knmdICrSg==" />
     </ConfigurationSettings>
   </Role>
   <Role name="WebRole">
     <Instances count="1" />
     <ConfigurationSettings>
-      <!--<Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=wpstestacctprod;AccountKey=mAQeY263PzjPoidH1bVAyPFzVuALSONMWJexM3QED23qp60NPG7KkEIxGRXXmiZcmi2di8TBupZXL5n39lOHsQ==" />-->
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=wpstestacctprod;AccountKey=qaw9vSqSKHM1szaxZPyAzGGjAfzFeNNopRS7uHviWgZjw59WOPChBl6rAYK+Z9Qi379t3I+KwBdn0knmdICrSg==" />
       <Setting name="Storage" value="DefaultEndpointsProtocol=https;AccountName=wpstestacctprod;AccountKey=qaw9vSqSKHM1szaxZPyAzGGjAfzFeNNopRS7uHviWgZjw59WOPChBl6rAYK+Z9Qi379t3I+KwBdn0knmdICrSg==" />
     </ConfigurationSettings>
   </Role>
