@@ -2,6 +2,9 @@
 <package>
 	<metadata>
 		<id>test</id>
+		<version>1.0</version>
+		<authors>Page</authors>
+		<description>Test</description>
 	</metadata>
   <files>
     <file src="AzureServicetest\bin\Release\app.publish\*.*" target="" />
