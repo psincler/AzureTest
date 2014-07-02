@@ -3,6 +3,6 @@
   <metadata>    
   </metadata>
   <files>
-    <file src="..\$TargetDir$\app.publish\*.*" target="" />
+    <file src="..\$TargetDir$\app.publish\*.*" target="lib" />
   </files>
 </package>
