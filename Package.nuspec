@@ -3,6 +3,6 @@
   <metadata>    
   </metadata>
   <files>
-    <file src="..\$TargetDir$\app.publish\*.*" target="lib" />
+    <file src="AzureServicetest\bin\Release\app.publish\*.*" target="" />
   </files>
 </package>
