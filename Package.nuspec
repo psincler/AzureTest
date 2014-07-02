@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <package>
+	<metadata>
+		<id>test</id>
+	</metadata>
   <files>
     <file src="AzureServicetest\bin\Release\app.publish\*.*" target="" />
   </files>
