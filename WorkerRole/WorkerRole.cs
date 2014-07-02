@@ -47,6 +47,7 @@ namespace WorkerRole
                     Product = "A gun to shoot NuGet!",
                     PartitionKey = "blah",
                     RowKey = Guid.NewGuid().ToString(),
+                    Foo = "Foo!"
                 });
 
             return base.OnStart();
