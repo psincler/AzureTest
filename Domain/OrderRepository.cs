@@ -38,9 +38,9 @@ namespace Domain
             return _table.ExecuteQuery(qry).ToArray();
         }
 
-        public void Delete(int id)
+        public void Delete(Order order)
         {
-
+            _table.Execute(TableOperation.Delete(order));
         }
     }
 }

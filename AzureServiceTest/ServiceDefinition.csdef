@@ -16,6 +16,7 @@
     </Imports>
     <ConfigurationSettings>
       <Setting name="Storage"/>
+      <Setting name="Env"/>
     </ConfigurationSettings>
   </WebRole>
   <WorkerRole name="WorkerRole" vmsize="Small">
@@ -24,6 +25,7 @@
     </Imports>
     <ConfigurationSettings>
       <Setting name="Storage"/>
+      <Setting name="Env"/>
     </ConfigurationSettings>
   </WorkerRole>
 </ServiceDefinition>

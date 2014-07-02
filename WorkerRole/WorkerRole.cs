@@ -22,8 +22,6 @@ namespace WorkerRole
 
             while (true)
             {
-                Thread.Sleep(10000);
-                Trace.TraceInformation("Working");
             }
         }
 
@@ -38,10 +36,19 @@ namespace WorkerRole
             var repo = new OrderRepository(RoleEnvironment.GetConfigurationSettingValue("Storage"));
 
             repo.Initialize();
-            
+
+            repo.Get().ToList().ForEach(o => repo.Delete(o));
+
             if (repo.Get().Count() == 0)
-                repo.Add(new Order { Ids = 1, Customer = "Page", Product="A gun to shoot NuGet!", PartitionKey = "blah", RowKey = Guid.NewGuid().ToString() });
-            
+                repo.Add(new Order
+                {
+                    Ids = 1,
+                    Customer = RoleEnvironment.GetConfigurationSettingValue("Env"),
+                    Product = "A gun to shoot NuGet!",
+                    PartitionKey = "blah",
+                    RowKey = Guid.NewGuid().ToString(),
+                });
+
             return base.OnStart();
         }
     }

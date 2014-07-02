@@ -5,6 +5,7 @@
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Storage" value="UseDevelopmentStorage=true"/>
+      <Setting name="Env" value="Local"/>
     </ConfigurationSettings>
   </Role>
   <Role name="WorkerRole">
@@ -12,6 +13,7 @@
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Storage" value="UseDevelopmentStorage=true"/>
+      <Setting name="Env" value="Local"/>
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>
