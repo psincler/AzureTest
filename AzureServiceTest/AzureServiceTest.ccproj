@@ -13,6 +13,8 @@
     <StartDevelopmentStorage>True</StartDevelopmentStorage>
     <Name>AzureServiceTest</Name>
     <PackageEnableRemoteDebugger>False</PackageEnableRemoteDebugger>
+    <ValidationIssuesAreErrors>True</ValidationIssuesAreErrors>
+    <UseWebProjectPorts>True</UseWebProjectPorts>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

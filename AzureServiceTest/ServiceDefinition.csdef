@@ -1,17 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ServiceDefinition name="AzureServiceTest" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-01.2.3">
-  <WorkerRole name="WorkerRole" vmsize="Small">
-    <ConfigurationSettings>
-      <Setting name="Storage"/>
-    </ConfigurationSettings>
-    <Imports>
-      <Import moduleName="Diagnostics" />
-    </Imports>
-  </WorkerRole>
   <WebRole name="WebRole" vmsize="Small">
-    <ConfigurationSettings>
-      <Setting name="Storage"/>
-    </ConfigurationSettings>
     <Sites>
       <Site name="Web">
         <Bindings>
@@ -25,5 +14,16 @@
     <Imports>
       <Import moduleName="Diagnostics" />
     </Imports>
+    <ConfigurationSettings>
+      <Setting name="Storage"/>
+    </ConfigurationSettings>
   </WebRole>
+  <WorkerRole name="WorkerRole" vmsize="Small">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="Storage"/>
+    </ConfigurationSettings>
+  </WorkerRole>
 </ServiceDefinition>
